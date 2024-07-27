@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "mineable_unmineable",
+  "version": "${version}",
+  "name": "Mineable Unmineable",
+  "description": "Blocks that should be breakable but isn't",
+  "authors": ["Aikoyori"],
+  "contact": {
+    "repo": "https://github.com/Aikoyori/Mineable Unmineable"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/mineable_unmineable/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+    ],
+    "main": [
+      "xyz.aikoyori.mineable_unmineable.MainClass"
+    ]
+  },
+  "mixins": [
+    "mineable_unmineable.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "${minecraft_version}",
+    "fabric": "<=${fabric_api_version}"
+  }
+}
